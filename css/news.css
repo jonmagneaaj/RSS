@@ -1,0 +1,107 @@
+#news{
+flex: 9;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+flex-grow: 4;
+flex-wrap: wrap;
+padding: 0px;
+gap: 28px;
+
+background: rgba(51, 51, 51, 0.2);
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(15px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 20px;
+}
+
+@media (max-width: 817px) {
+    #news {
+      flex-direction: column; /* Change flex direction for screens less than x wide */
+    }
+
+    #my-image {
+        border-radius: 20px 20px 0px 0px !important;
+    }
+
+    #output {
+        padding: 28px !important;
+    }
+  }
+
+#image-output {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    flex: 2;
+} 
+
+#my-image{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    object-fit:cover;
+
+    border-radius: 20px 0px 0px 20px;
+} 
+
+#output{
+flex: 6;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 28px 28px 28px 0px;
+gap: 28px;
+
+/* Inside auto layout */
+
+flex: 3;
+order: 1;
+align-self: stretch;
+}
+
+
+.fade-in {
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+    animation-fill-mode: forwards;
+
+    
+  }
+  
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadein { /* Opera */
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
