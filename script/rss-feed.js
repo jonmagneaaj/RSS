@@ -55,8 +55,8 @@ fetch(feedURL)
       p.textContent = description;
 
 
-      // Add the 'slide-out' class to the output container     //nyyyyyyyyyyyyy
-      outputContainer.classList.add('slide-out');
+      // Add the 'fade-out' class to the output container     //nyyyyyyyyyyyyy
+      outputContainer.classList.add('fade-out');
         // Wait for the transition to finish
       setTimeout(() => {
 
@@ -66,15 +66,15 @@ fetch(feedURL)
       outputContainer.appendChild(h2);
       outputContainer.appendChild(p);
 
-      // Fjerne slide-out
-      outputContainer.classList.remove('slide-out');
-      // Add the 'slide-in' class to the output container
-      outputContainer.classList.add('slide-in');
+      // Fjerne fade-out
+      outputContainer.classList.remove('fade-out');
+      // Add the 'fade-in' class to the output container
+      outputContainer.classList.add('fade-in');
 
-      }, 500); // 500ms (duration of the 'slide-out' transition)
+      }, 500); // 500ms (duration of the 'fade-out' transition)
 
-      // Fjerne slide-in
-      outputContainer.classList.remove('slide-in');
+      // Fjerne fade-in
+      outputContainer.classList.remove('fade-in');
  
 
 

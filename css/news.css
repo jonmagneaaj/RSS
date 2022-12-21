@@ -62,20 +62,20 @@ order: 1;
 align-self: stretch;
 }
 
-.slide-out {
-  /* Add a transition effect to the transform property */
-  transition: transform 0.2s ease-out;
-  /* Translate the element to the right */
-  transform: translateX(100%);
+.fade-out {
+  /* Add a transition effect to the opacity property */
+  transition: opacity 0.2s ease-out;
+  /* Set the element to be fully transparent by default */
+  opacity: 0;
   /* Set the element to be hidden by default */
   visibility: hidden;
 }
 
-.slide-in {
-  /* Add a transition effect to the transform property */
-  transition: transform 0.2s ease-in;
-  /* Reset the transform to its default value */
-  transform: translateX(0);
+.fade-in {
+  /* Add a transition effect to the opacity property */
+  transition: opacity 0.2s ease-in;
+  /* Set the element to be fully opaque by default */
+  opacity: 1;
   /* Set the element to be visible by default */
   visibility: visible;
 }
