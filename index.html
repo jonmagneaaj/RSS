@@ -11,14 +11,20 @@
     <title>Nyheter</title>
 </head>
 <body>
-    <!-- hei -->
+    
     <!-- oversikt over tid og vær -->
     <section id="weather">
         <!-- Dagens tid og dato-->
         <div id="date">
-            <h1>10:45</h1>
-            <h2>mandag</h1>
-            <h3>23 desember</h1>
+            <div id="Dhour" class="dates">
+                <h1>10:45</h1>
+            </div>
+            <div id="Dday" class="dates">
+                <h2>mandag</h2>
+            </div>
+            <div id="Ddate" class="dates">
+                <h3>23 desember</h3>
+            </div>
         </div>
 
         <!-- Været nå -->
@@ -53,7 +59,7 @@
      <!-- Henter rss feed-->
     <script src='./script/rss-feed.js'></script>
      <!-- Henter tiden-->
-    <script src='./script/timejs'></script>
+    <script src='./script/time.js'></script>
 
 
 </body>
