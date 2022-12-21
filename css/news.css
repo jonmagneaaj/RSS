@@ -62,46 +62,20 @@ order: 1;
 align-self: stretch;
 }
 
+.slide-out {
+  /* Add a transition effect to the transform property */
+  transition: transform 0.2s ease-out;
+  /* Translate the element to the right */
+  transform: translateX(100%);
+  /* Set the element to be hidden by default */
+  visibility: hidden;
+}
 
-.fade-in {
-    animation: fadein 1.5s;
-    -moz-animation: fadein 1.5s; /* Firefox */
-    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
-    -o-animation: fadein 1.5s; /* Opera */
-    animation-fill-mode: forwards;
-
-    
-  }
-  
-@keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-moz-keyframes fadein { /* Firefox */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-o-keyframes fadein { /* Opera */
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.slide-in {
+  /* Add a transition effect to the transform property */
+  transition: transform 0.2s ease-in;
+  /* Reset the transform to its default value */
+  transform: translateX(0);
+  /* Set the element to be visible by default */
+  visibility: visible;
+}
