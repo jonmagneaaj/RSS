@@ -46,5 +46,5 @@ fetch(feedURL)
       outputContainer.appendChild(p);
 
       i++;
-    }, 5000); // 10 second interval
+    }, 10000); // 10 second interval
   });
