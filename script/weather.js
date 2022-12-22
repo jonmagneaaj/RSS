@@ -60,24 +60,50 @@ const getWeather = async (lat, lon) =>{
             `
         }
     }
-    //Printer neste 2 værmeldinger
+    // Henter timen
+    var datoen = new Date();
+    var hour = datoen.getHours();
+    var minutes = datoen.getMinutes();
+    var day = datoen.getDay(); // get the current day of the week
+
+    // Printer neste 2 værmeldinger
     for ( let i=1; i < 3; i++) {
-        if (temprature[i] < 1) {
-            days.innerHTML += `
-            <div class='day'>
-                <img src=${forcastArray[i]} >
-                <h3 class='coldFont'>${temprature[i]} </h3>
-            </div>
-        `
-        } else {
-            days.innerHTML += `
-                <div class='day'>
-                    <img src=${forcastArray[i]} >
-                    <h3 class='varmFont'>${temprature[i]} </h3>
-                </div>
-            `
-        }
+    hour = hour + i*6; // update the value of hour
+    if (hour > 23) {
+        hour = hour - 24;
+        day++; // increment the value of day by 1
     }
+    if (day > 6) {
+        day = day - 7; // reset the value of day to 0 if it exceeds 6
+    }
+
+    // add a leading zero to the value of hour if it is a single digit
+    if (hour < 10) {
+        hour = hour.toString().padStart(2, '0');
+    }
+     // add a leading zero to the value of minutes if it is a single digit
+    if (minutes < 10) {
+        minutes = minutes.toString().padStart(2, '0');
+    }
+
+    if (temprature[i] < 1) {
+        days.innerHTML += `
+        <div class='day'>
+            <h4>${hour}:${minutes}</h4>
+            <img src=${forcastArray[i]} >
+            <h3 class='coldFont'>${temprature[i]} </h3>
+        </div>
+        `
+    } else {
+        days.innerHTML += `
+        <div class='day'>
+            <h4>${hour}:${minutes}</h4>
+            <img src=${forcastArray[i]} >
+            <h3 class='varmFont'>${temprature[i]} </h3>
+        </div>
+        `
+    }
+ }
 }
 
 // Refresher været hvert 30 min
