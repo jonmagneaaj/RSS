@@ -8,12 +8,16 @@ flex-wrap: wrap;
 padding: 0px;
 gap: 28px;
 
+width: 100%;
+max-height: 100%;
+
 background: rgba(51, 51, 51, 0.2);
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 backdrop-filter: blur(15px);
 /* Note: backdrop-filter has minimal browser support */
 
 border-radius: 20px;
+
 }
 
 @media (max-width: 817px) {
@@ -48,18 +52,19 @@ border-radius: 20px;
 } 
 
 #output{
-flex: 6;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 28px 28px 28px 0px;
-gap: 28px;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 28px 28px 0px;
+  gap: 28px;
+  max-height: 100%;
+  /* Inside auto layout */
 
-/* Inside auto layout */
-
-flex: 3;
-order: 1;
-align-self: stretch;
+  order: 1;
+  align-self: stretch;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fade-out {
