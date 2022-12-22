@@ -11,47 +11,60 @@
     <title>Nyheter</title>
 </head>
 <body>
+    <!-- Boks som holder det samlet -->
+    <section id="container">
+        <!-- Boks til nyheter og vær-->
+        <section id="weatherNews-container">
+            <!-- oversikt over tid og vær -->
+            <div id="weather">
+                <!-- Dagens tid og dato-->
+                <div id="date">
+                    <div id="Dhour" class="dates">
+                        <h1>10:45</h1>
+                    </div>
+                    <div id="Dday" class="dates">
+                        <h2>mandag</h2>
+                    </div>
+                    <div id="Ddate" class="dates">
+                        <h3>23 desember</h3>
+                    </div>
+                </div>
     
-    <!-- oversikt over tid og vær -->
-    <section id="weather">
-        <!-- Dagens tid og dato-->
-        <div id="date">
-            <div id="Dhour" class="dates">
-                <h1>10:45</h1>
+                <!-- Været nå -->
+                <div id="forcast">
+                    <div class="loading-icon"></div>
+                </div>
+    
+                <!-- Været om 6 og 12 timer-->
+                <div id="days">
+                    <div class="loading-icon"></div>
+                    <div class="loading-icon"></div>
+                </div>
             </div>
-            <div id="Dday" class="dates">
-                <h2>mandag</h2>
-            </div>
-            <div id="Ddate" class="dates">
-                <h3>23 desember</h3>
-            </div>
-        </div>
-
-        <!-- Været nå -->
-        <div id="forcast">
-            <div class="loading-icon"></div>
-        </div>
-
-        <!-- Været om 6 og 12 timer-->
-        <div id="days">
-            <div class="loading-icon"></div>
-            <div class="loading-icon"></div>
-        </div>
-    </section>
-
-    <!-- oversikt over nyheter -->
-    <section id="news" class="">
-        <!--Bilde output-->
-        <section id="image-output" class="">
-            <img id="my-image" class="">
+            <section id="news-container">
+                <!-- oversikt over nyheter -->
+                <div id="news" class="">
+                    <!--Bilde output-->
+                    <section id="image-output" class="">
+                        <img id="my-image" class="">
+                    </section>
+                
+                    <!-- tekst output-->
+                    <section id="output" class="">
+                    </section>
+        
+                </div>
+                <!-- Rullerende nyheter-->
+                <div id="rollNews">
+                    <h3>Nyheter</h3>
+                </div>
+            </section>
         </section>
-       
-        <!-- tekst output-->
-        <section id="output" class="">
+        <!-- Aksje kurs -->
+        <section id="stocks">
+            <h3> Microsoft 23 poeng ??</h3>
         </section>
-
     </section>
-
 
     <!-- Javascript filer -->
     <!-- Henter været-->
