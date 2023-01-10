@@ -68,7 +68,7 @@ const getWeather = async (lat, lon) =>{
 
     // Printer neste 2 værmeldinger
     for ( let i=1; i < 3; i++) {
-    hour = hour + i*6; // update the value of hour
+    hour = hour + i+6; // update the value of hour
     if (hour > 23) {
         hour = hour - 24;
         day++; // increment the value of day by 1
