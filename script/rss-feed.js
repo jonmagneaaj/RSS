@@ -46,6 +46,9 @@ fetch(feedURL)
       // Get the text content of the 'description' element of the current item
       const description = item.querySelector('description').textContent;
 
+     
+
+
       // Set the src attribute of the image element to the first image URL
       // or the backup image URL if the first image URL is invalid
       imageElement.src = firstImageURL || backupImageURL;
@@ -53,7 +56,12 @@ fetch(feedURL)
       // Set the text content of the h2 and p elements
       h2.textContent = title;
       p.textContent = description;
-      if(p.length > 10) p = p.substring(0,10);
+
+      // Check if the description string is longer than 150 characters
+      if (p.textContent.length > 300) {
+        // Truncate the string to 150 characters and append "(...)"
+        p.textContent = p.textContent.substring(0, 300) + " (...)";
+      }
 
       // Add the 'fade-out' class to the output container     //nyyyyyyyyyyyyy
       outputContainer.classList.add('fade-out');
