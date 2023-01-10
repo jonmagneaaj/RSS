@@ -1,4 +1,4 @@
-const feedURL = 'https://www.nrk.no/toppsaker.rss';
+const feedURL = 'www.nrk.no/sport/toppsaker.rss';
 
 // URL of the backup image to use if the feed item doesn't have an image
 const backupImageURL = '/resources/nrk_bakgrunn.jpeg';
@@ -17,9 +17,9 @@ fetch(feedURL)
     const items = xml.querySelectorAll('item');
 
     // Get the output container element
-    const outputContainer = document.getElementById('output');
+    const outputContainer = document.getElementById('roll-outputText');
     // Get the image element
-    const imageElement = document.getElementById('my-image');
+    const imageElement = document.getElementById('roll-my-image');
     // Create h2 and p elements
     const h2 = document.createElement('h2');
     const p = document.createElement('p');
@@ -53,7 +53,7 @@ fetch(feedURL)
       // Set the text content of the h2 and p elements
       h2.textContent = title;
       p.textContent = description;
-      if(p.length > 10) p = p.substring(0,10);
+
 
       // Add the 'fade-out' class to the output container     //nyyyyyyyyyyyyy
       outputContainer.classList.add('fade-out');
@@ -74,7 +74,7 @@ setTimeout(() => {
   outputContainer.classList.add('fade-in');
 }, 500); // 500ms (duration of the 'fade-out' transition)
 
-      }, 500); // 500ms (duration of the 'fade-out' transition)
+      }, 300); // 500ms (duration of the 'fade-out' transition)
 
       // Fjerne fade-in
       outputContainer.classList.remove('fade-in');

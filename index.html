@@ -47,6 +47,7 @@
             <section id="news-container">
                 <!-- oversikt over nyheter -->
                 <div id="news" class="">
+                    
                     <!--Bilde output-->
                     <section id="image-output" class="">
                         <img id="my-image" class="">
@@ -57,17 +58,26 @@
                     </section>
         
                 </div>
+
                 <!-- Rullerende nyheter-->
                 <div id="rollNews">
                     <h3>Nyheter</h3>
                 </div>
             </section>
         </section>
-        <!-- Aksje kurs -->
-        <section id="stocks">
-            <h3> Microsoft 23 poeng ??</h3>
+
+
+        <!-- rullenyheter -->
+        <section id="" class="scrolling-container">
+            <marquee direction="left">
+                <h3>Nyheter</h3>
+                   <!-- Your news feed content goes here -->
+              </marquee>
         </section>
+        
     </section>
+
+
 
     <!-- Javascript filer -->
     <!-- Henter været-->
@@ -76,6 +86,8 @@
     <script src='./script/rss-feed.js'></script>
      <!-- Henter tiden-->
     <script src='./script/time.js'></script>
+      <!-- Henter rolling rss feed-->
+    <script src='./script/rolling-feed.js'></script>
 
 
 </body>
