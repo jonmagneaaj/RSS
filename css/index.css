@@ -40,6 +40,7 @@ body{
      /* Note: backdrop-filter has minimal browser support */
   
     border-radius: 20px;
+    gap: 28px;
 }
 
 #container {
@@ -49,7 +50,6 @@ body{
     display: flex;
     flex-direction: column;
 
-    gap: 28px;
     margin: 48px 28px;
 }
 
@@ -57,17 +57,16 @@ body{
     display: flex;
     flex: 10; 
     flex-direction: row;
-    gap: 28px;
     max-width: 100%;
-
+    gap: 28px
 }
 
 #news-container{
     display: flex;
     flex-direction: column;
-    gap: 28px;
     width: 78%;
     max-height: 100%;
+    gap: 28px;
 }
 
 
@@ -75,8 +74,11 @@ body{
     #container {
       flex-direction: column; /* Change flex direction for screens less than x wide */
       margin: 18px 8px;
-      gap: 16px;
       height: 100%;
+    }
+
+    .glass{
+        gap:16px;
     }
 
     #weatherNews-container{
@@ -84,7 +86,7 @@ body{
         gap: 16px;
     }
 
-    #news-container{
+    #news-container{ 
         gap: 16px;
     }
 
