@@ -1,99 +1,75 @@
 const feedURL = 'https://www.nrk.no/toppsaker.rss';
-
-// URL of the backup image to use if the feed item doesn't have an image
 const backupImageURL = '/resources/nrk_bakgrunn.jpeg';
 
-// Fetch the RSS feed from the given URL
 fetch(feedURL)
-  // Convert the response to text
   .then((response) => response.text())
-  // Parse the text as XML
   .then((data) => {
-    // Create a new DOM parser
     const parser = new DOMParser();
-    // Parse the XML data
     const xml = parser.parseFromString(data, 'text/xml');
-    // Get a list of all the 'item' elements in the XML
     const items = xml.querySelectorAll('item');
 
-    // Get the output container element
     const outputContainer = document.getElementById('output');
-    // Get the image element
     const imageElement = document.getElementById('my-image');
-    // Create h2 and p elements
-    const h2 = document.createElement('h2');
-    const p = document.createElement('p');
+    imageElement.src = backupImageURL;
 
-    // Initialize a counter variable
     let i = 0;
-    // Set an interval to update the page content every 10 seconds
-    setInterval(() => {
-      // If the counter has reached the end of the list of items, reset it to 0
-      if (i >= items.length) {
-        i = 0;
-      }
+    
+    let isTransitioning = false;
 
-      // Get the current item
-      const item = items[i];
-      // Get a list of all the 'media:content' elements in the XML
-      const imageElements = xml.getElementsByTagName('media:content');
-      // Get the first 'media:content' element
-      const firstImageElement = imageElements[i];
-      // Get the 'url' attribute of the first 'media:content' element
-      const firstImageURL = firstImageElement.getAttribute('url');
-      // Get the text content of the 'title' element of the current item
-      const title = item.querySelector('title').textContent;
-      // Get the text content of the 'description' element of the current item
-      const description = item.querySelector('description').textContent;
+function updateOutput() {
+  if (isTransitioning) {
+    return;
+  }
+  isTransitioning = true;
+  if (i >= items.length) {
+    i = 0;
+  }
 
-     
+  const item = items[i];
+  const title = item.querySelector('title').textContent;
+  const description = item.querySelector('description').textContent;
+  const h2 = document.createElement('h2');
+  const p = document.createElement('p');
+  h2.textContent = title;
+  p.textContent = description;
+  
+  if (p.textContent.length > 500) {
+    p.textContent = p.textContent.substring(0, 500) + " (...)";
+  }
 
-
-      // Set the src attribute of the image element to the first image URL
-      // or the backup image URL if the first image URL is invalid
-      imageElement.src = firstImageURL || backupImageURL;
-
-      // Set the text content of the h2 and p elements
-      h2.textContent = title;
-      p.textContent = description;
-
-      // Check if the description string is longer than 150 characters
-      if (p.textContent.length > 300) {
-        // Truncate the string to 150 characters and append "(...)"
-        p.textContent = p.textContent.substring(0, 300) + " (...)";
-      }
-
-      // Add the 'fade-out' class to the output container     //nyyyyyyyyyyyyy
-      outputContainer.classList.add('fade-out');
-        // Wait for the transition to finish
+  const imageElements = item.getElementsByTagName('media:content');
+  let firstImageURL = backupImageURL;
+  if (imageElements.length > 0) {
+    firstImageURL = imageElements[0].getAttribute('url');
+  }
+  imageElement.classList.add('fade-out');
+  outputContainer.classList.add('fade-out');
+  
+    setTimeout(() => {
+      imageElement.src = firstImageURL;
+      imageElement.classList.remove('fade-out');
+      outputContainer.innerHTML = '';
+      outputContainer.appendChild(h2);
+      outputContainer.appendChild(p);
+      outputContainer.classList.remove('fade-out');
       setTimeout(() => {
+        imageElement.classList.add('fade-in');
+        outputContainer.classList.add('fade-in');
+      }, 200); // match the duration to 0.2s
+      
+      setTimeout(() => {
+        isTransitioning = false;
+        i++;
+      }, 500); // match the duration to 0.2s
+    }, 500); // match the duration to 0.2s
+    
+    
+}
+setInterval(updateOutput, 9000);
 
+    
 
-// Wait for the transition to finish
-setTimeout(() => {
-  // Clear the output container and append the h2 and p elements
-  outputContainer.innerHTML = '';
-  outputContainer.appendChild(h2);
-  outputContainer.appendChild(p);
-
-  // Remove the 'fade-out' class from the output container
-  outputContainer.classList.remove('fade-out');
-  // Add the 'fade-in' class to the output container
-  outputContainer.classList.add('fade-in');
-}, 500); // 500ms (duration of the 'fade-out' transition)
-
-      }, 500); // 500ms (duration of the 'fade-out' transition)
-
-      // Fjerne fade-in
-      outputContainer.classList.remove('fade-in');
- 
-
-
-      // Increment the counter
-      i++;
-    }, 10000); // 10 second interval
   })
-  // Catch any errors that occur during the fetch or parsing
   .catch((error) => {
     console.error(error);
   });

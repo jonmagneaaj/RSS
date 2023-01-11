@@ -12,23 +12,14 @@
   
   }
   
-  .fade-out {
-    /* Add a transition effect to the opacity property */
-    transition: opacity 0.2s ease-out;
-    /* Set the element to be fully transparent by default */
-    opacity: 0;
-    /* Set the element to be hidden by default */
-    visibility: hidden;
-  }
-  
   .fade-in {
-    /* Add a transition effect to the opacity property */
-    transition: opacity 0.2s ease-in;
-    /* Set the element to be fully opaque by default */
     opacity: 1;
-    /* Set the element to be visible by default */
-    visibility: visible;
-  }
+    transition: opacity .5s ease-in;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
 
   #image-output {
     height: 100%;
