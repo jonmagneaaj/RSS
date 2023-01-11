@@ -1,5 +1,5 @@
 const feedURL = 'https://www.nrk.no/toppsaker.rss';
-const backupImageURL = '/resources/nrk_bakgrunn.jpeg';
+const backupImageURL = './resources/nrk_bakgrunn.jpeg';
 
 fetch(feedURL)
   .then((response) => response.text())
