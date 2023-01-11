@@ -25,7 +25,7 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    
+    position: relative;
     flex: 3;
   } 
   
@@ -38,6 +38,20 @@
     border-radius: 20px 0px 0px 20px;
   } 
   
+  #logo-img {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: white;
+    
+    border-radius: 8px;
+  }
+
+  #logo-img img { 
+    width: 100px; /* or any desired width */
+    padding: 28 8;
+  
+  }
   
   #output{
     flex: 6;
