@@ -4,7 +4,8 @@ const days = document.querySelector('#days')
 const url = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&lang={no}&appid=b6bf7c7278d021187d253f08549e9aa3'
 const getWeather = async (lat, lon) =>{
 
-    const api = `${url}&lat=${lat}&lon=${lon}`;
+    // const api = `${url}&lat=${lat}&lon=${lon}`;
+    const api = `${url}&lat=59.911491&lon=10.757933`;
 
     const response = await fetch(api);
     const json = await response.json();
