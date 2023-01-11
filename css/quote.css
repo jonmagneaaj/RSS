@@ -11,10 +11,11 @@
     text-align: left;
     flex-wrap: wrap;
     font-style: italic;
+    font-size: 38;
   }
 
   #author {
     text-align: left;
     flex-wrap: wrap;
-    font-weight: bold;
+    font-size: 38;
   }

@@ -33,8 +33,8 @@ function updateOutput() {
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 500) {
-    p.textContent = p.textContent.substring(0, 500) + " (...)";
+  if (p.textContent.length > 350) {
+    p.textContent = p.textContent.substring(0, 350) + " (...)";
   }
 
   const imageElements = item.getElementsByTagName('media:content');
