@@ -1,7 +1,7 @@
 [
     {
-        "quote": "I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.",
-        "author": "Martin Luther King Jr."
+        "quote": "Livet er et lære. Du må alltid lære",
+        "author": "Milo"
     },
     {
         "quote": "Ask not what your country can do for you, ask what you can do for your country.",
@@ -12,8 +12,8 @@
         "author": "Edmund Burke"
     },
     {
-        "quote": "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender.",
-        "author": "Winston Churchill"
+        "quote": "What can be asserted without evidence can be dismissed without evidence.",
+        "author": "Christopher Hitchens"
     },
     {
         "quote": "To be or not to be, that is the question.",
@@ -61,6 +61,99 @@
     },
     {
         "quote": "The best way to predict your future is to create it.",
-        "author": "sdsd"
+        "author": "Unknown"
+    },
+    {
+        "quote": "Be the change that you wish to see in the world.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "quote": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs"
+    },
+    {
+        "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "author": "Winston Churchill"
+    },
+    {
+        "quote": "Life is what happens to you while you're busy making other plans.",
+        "author": "John Lennon"
+    },
+    {
+        "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+        "author": "Franklin D. Roosevelt"
+    },
+    {
+        "quote": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+    },
+    {
+        "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        "author": "Nelson Mandela"
+    },
+    {
+        "quote": "In three words I can sum up everything I've learned about life: it goes on.",
+        "author": "Robert Frost"
+    },
+    {
+        "quote": "In the end, it's not the years in your life that count. It's the life in your years.",
+        "author": "Abraham Lincoln"
+    },
+    {
+        "quote": "Happiness is not something ready-made. It comes from your own actions.",
+        "author": "Dalai Lama"
+    },
+    {
+        "quote": "Be yourself; everyone else is already taken.",
+        "author": "Oscar Wilde"
+    },
+    {
+        "quote": "The essence of the independent mind lies not in what it thinks, but in how it thinks.",
+        "author": "Christopher Hitchens"
+    },
+    {
+        "quote": "Be yourself; everyone else is already taken.",
+        "author": "Oscar Wilde"
+    },
+    {
+        "quote": "The unexamined life is not worth living.",
+        "author": "Socrates"
+    },
+    {
+        "quote": "Man is the measure of all things.",
+        "author": "Protagoras"
+    },
+    {
+        "quote": "I think, therefore I am.",
+        "author": "René Descartes"
+    },
+    {
+        "quote": "The greatest happiness of the greatest number is the foundation of morals and legislation.",
+        "author": "Jeremy Bentham"
+    },
+    {
+        "quote": "Happiness is the highest good.",
+        "author": "Aristotle"
+    },
+    {
+        "quote": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+    },
+    {
+        "quote": "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows.",
+        "author": "George Orwell"
+    },
+    {
+        "quote": "The only true wisdom is knowing you know nothing.",
+        "author": "Socrates"
+    },
+    {
+        "quote": "The only end of writing is to enable the reader better to enjoy life, or better to endure it.",
+        "author": "Samuel Johnson"
+    },
+    {
+        "quote": "The will to power is the will to live, to live more intensely and fully.",
+        "author": "Friedrich Nietzsche"
     }
+
   ]

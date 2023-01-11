@@ -7,7 +7,11 @@ fetch("quotes.json")
     let currentQuoteIndex = 0;
 
     function updateQuote() {
-      document.getElementById("quote").innerHTML = quotes[currentQuoteIndex].quote;
+      let quote = document.createTextNode(quotes[currentQuoteIndex].quote);
+      let i = document.createElement("i");
+      i.appendChild(quote);
+      document.getElementById("quote").innerHTML = "";
+      document.getElementById("quote").appendChild(i);
       document.getElementById("author").innerHTML = quotes[currentQuoteIndex].author;
 
       currentQuoteIndex++;
