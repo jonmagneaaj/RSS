@@ -21,7 +21,7 @@ function updateOutput() {
     return;
   }
   isTransitioning = true;
-  if (i >= items.length) {
+  if (i >= 9) {               // 9 pleide å være items.length
     i = 0;
   }
 
@@ -65,7 +65,7 @@ function updateOutput() {
     
     
 }
-setInterval(updateOutput, 9000);
+setInterval(updateOutput, 3*9000);
 
     
 
