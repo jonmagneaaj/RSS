@@ -23,6 +23,12 @@
     }
   }
 
+  @media (min-width: 1800px) {
+    #weather { 
+      max-width: 324px;
+    }
+  }
+
 #date{
   display: flex;
   flex-direction: column;

@@ -50,7 +50,6 @@
 
   #logo-img img { 
     width: 94px; /* or any desired width */
-
   }
   
   #output{
@@ -68,6 +67,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  @media (min-width: 1800px) {
+
+    #logo-img img { 
+      width: 128px; /* or any desired width */
+    }
+    
+   }
+
   
   @media (max-width: 817px) {
       #news {
