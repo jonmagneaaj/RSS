@@ -11,11 +11,14 @@
     text-align: left;
     flex-wrap: wrap;
     font-style: italic;
-    font-size: 38;
+    font-size:  28px;
+    justify-content: flex-start;
   }
 
   #author {
     text-align: left;
     flex-wrap: wrap;
-    font-size: 38;
+    justify-content: flex-start;
+
+    font-size: 24px;
   }
