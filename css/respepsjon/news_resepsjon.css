@@ -1,0 +1,94 @@
+#news{
+  flex: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-grow: 4;
+  flex-wrap: wrap;
+  padding: 0px;
+  
+  width: 100%;
+  max-width: 100%;
+  
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+  #image-output {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    flex: 3;
+  } 
+  
+  #my-image{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    object-fit:cover;
+    
+    border-radius: 20px 0px 0px 20px;
+  } 
+  
+  #logo-img {
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    background-color: white;
+    padding: 6px 8px 4px 8px;
+    border-radius: 0px 8px 8px 0px;
+
+  }
+
+  #logo-img img { 
+    width: 94px; /* or any desired width */
+  }
+  
+  #output{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    padding: 28px 28px 28px 0px;
+    gap: 28px;
+    height: 100%;
+    /* Inside auto layout */
+    
+    align-self: stretch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (min-width: 1800px) {
+
+    #logo-img img { 
+      width: 128px; /* or any desired width */
+    }
+    
+   }
+
+  
+  @media (max-width: 817px) {
+      #news {
+        flex-direction: column; /* Change flex direction for screens less than x wide */
+        gap:0 !important;
+      }
+  
+      #my-image {
+          border-radius: 20px 20px 0px 0px !important;
+      }
+  
+      #output {
+          padding: 16px !important;
+      }
+    }
+  
