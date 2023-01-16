@@ -4,7 +4,7 @@ fetch("/resources/quotes.json")
   .then(response => response.json())
   .then(data => {
     quotes = data;
-    let currentQuoteIndex = 0;
+    let currentQuoteIndex = Math.floor(Math.random() * quotes.length);
 
     function updateQuote() {
       let quote = document.createTextNode(quotes[currentQuoteIndex].quote);
