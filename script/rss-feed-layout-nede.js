@@ -18,20 +18,20 @@ function updateOutput() {
     return;
   }
   isTransitioning = true;
-  if (i >= 9) {               // 9 pleide å være items.length
+  if (i >= 5) {               // 9 pleide å være items.length
     i = 0;
   }
 
   const item = items[i];
   const title = item.querySelector('title').textContent;
   const description = item.querySelector('description').textContent;
-  const h2 = document.createElement('h2');
-  const p = document.createElement('p');
+  const h2 = document.createElement('h5');
+  const p = document.createElement('h6');
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 330) {
-    p.textContent = p.textContent.substring(0, 330) + " (...)";
+  if (p.textContent.length > 175) {
+    p.textContent = p.textContent.substring(0, 175) + " (...)";
   }
 
   
