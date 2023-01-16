@@ -1,0 +1,33 @@
+[
+    {
+        "company": "Veni AS",
+        "description": "Teknologiselskap",
+        "floor": "3"
+    },
+    {
+        "company": "SpareBank 1 Eiendom",
+        "description": "Et eller annet",
+        "floor": "5"
+    },
+    {
+        "company": "SpareBank 1 Samspar",
+        "description": "Et eller annet",
+        "floor": "4"
+    },
+    {
+        "company": "SpareBank 1 Utvikling",
+        "description": "Et eller annet",
+        "floor": "5"
+    },
+    {
+        "company": "SpareBank 1 Pensjon",
+        "description": "Et eller annet",
+        "floor": "5"
+    },
+    {
+        "company": "Firmanavn",
+        "description": "Et eller annet",
+        "floor": "2"
+    }
+
+]

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css filer -->
-    <link rel="stylesheet" href="./css/respepsjon/index_resepsjon.css">
-    <link rel="stylesheet" href="./css/respepsjon/weather_resepsjon.css">
-    <link rel="stylesheet" href="./css/respepsjon/news_resepsjon.css">
-    <link rel="stylesheet" href="./css/respepsjon/quote_resepsjon.css">
+    <link rel="stylesheet" href="./css/respepsjon/index.css">
+    <link rel="stylesheet" href="./css/respepsjon/weather.css">
+    <link rel="stylesheet" href="./css/respepsjon/news.css">
+ 
     <title>Nyheter</title>
 </head>
 <body>
@@ -49,9 +49,7 @@
             </div>
 
             <section id="quotesection" class="glass">
-                <h3>Quote of the day</h3>
-                <div id="quote"></div>
-                <div id="author"></div>
+                <ul id="list-container"></ul>
             </section>   
 
 
@@ -60,14 +58,7 @@
                 <!-- oversikt over nyheter -->
                 <div id="news" class=" glass">
                     
-                    <!--Bilde output-->
-                    <section id="image-output" class="">
-                        <img id="my-image" class="">
-                        <!--NRK logo-->
-                        <div id="logo-img">
-                            <img src="./resources/NRK_positiv_rgb.png" alt="NRK logo">
-                        </div>
-                    </section>
+                   
                 
                     <!-- tekst output-->
                     <section id="output" class="">
@@ -104,14 +95,13 @@
 
     <!-- Javascript filer -->
     <!-- Henter været-->
-    <script src='./script/resepsjon/weather_respesjon.js'></script>
+    <script src='./script/weather.js'></script>
      <!-- Henter rss feed-->
-    <script src='./script/rss-feed.js'></script>
+    <script src='./script/rss-feed-layout-nede.js'></script>
      <!-- Henter tiden-->
     <script src='./script/time.js'></script>
-      <!-- Henter rolling rss feed-->
-    <script src='./script/quotes.js'></script>
-
+      <!-- Henter firmaliste -->
+    <script src='./script/firmaliste.js'></script>
 
 </body>
 </html>
