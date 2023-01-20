@@ -102,7 +102,7 @@ const getWeather = async (lat, lon) =>{
 }
 
 // Refresher været hvert 30 min
-setInterval(getWeather, 30 * 60 * 1000);
+setInterval(getWeather, 5 * 60 * 1000);
 
 // Lager posisjonen
 const visPosisjon = (pos) =>{
