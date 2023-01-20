@@ -30,8 +30,8 @@ function updateOutput() {
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 175) {
-    p.textContent = p.textContent.substring(0, 175) + " (...)";
+  if (p.textContent.length > 200) {
+    p.textContent = p.textContent.substring(0, 200) + " (...)";
   }
 
   
