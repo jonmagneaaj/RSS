@@ -4,8 +4,8 @@ const days = document.querySelector('#days')
 const url = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&lang={no}&appid=b6bf7c7278d021187d253f08549e9aa3'
 const getWeather = async (lat, lon) =>{
 
-    // const api = `${url}&lat=${lat}&lon=${lon}`;
-    const api = `${url}&lat=59.911491&lon=10.757933`;
+    const api = `${url}&lat=${lat}&lon=${lon}`;
+   
 
     const response = await fetch(api);
     const json = await response.json();
@@ -28,24 +28,21 @@ const getWeather = async (lat, lon) =>{
     // Funksjon til å gå igjennom Json og putte dataen i hver sin array
     Catch();
     function Catch() {
-
         days.innerHTML = ``;
         forcast.innerHTML = ``;
-
-        if (i < json.list.length) {
+    
+        for (let i = 0; i < json.list.length; i++) {
             let bilde = json.list[i].weather[0].icon;
             let bildeURL = `http://openweathermap.org/img/wn/${bilde}@2x.png`;
             let temp = json.list[i].main.temp;
             let dt = json.list[i].dt;
             const mtemp = Math.trunc(temp);
-
+    
             forcastArray.push(bildeURL)
             temprature.push(mtemp)
+        }
+    }
     
-            i++
-            Catch();
-        };
-    };
 
     //Printer nåtid på værmelding
     for ( let i=0; i < 1; i++) {
@@ -61,10 +58,10 @@ const getWeather = async (lat, lon) =>{
             `
         }
     }
+
     // Henter timen
     var datoen = new Date();
-    var hour = datoen.getHours();
-    var minutes = datoen.getMinutes();
+    var hour = Math.round(datoen.getHours()/6)*6;
     var day = datoen.getDay(); // get the current day of the week
 
     // Printer neste 2 værmeldinger
@@ -82,15 +79,10 @@ const getWeather = async (lat, lon) =>{
     if (hour < 10) {
         hour = hour.toString().padStart(2, '0');
     }
-     // add a leading zero to the value of minutes if it is a single digit
-    if (minutes < 10) {
-        minutes = minutes.toString().padStart(2, '0');
-    }
-
     if (temprature[i] < 1) {
         days.innerHTML += `
         <div class='day'>
-            <h4>${hour}:${minutes}</h4>
+            <h4>${hour}:00</h4>
             <img src=${forcastArray[i]} >
             <h3 class='coldFont'>${temprature[i]} </h3>
         </div>
@@ -98,12 +90,14 @@ const getWeather = async (lat, lon) =>{
     } else {
         days.innerHTML += `
         <div class='day'>
-            <h4>${hour}:${minutes}</h4>
+            <h4>${hour}:00</h4>
             <img src=${forcastArray[i]} >
             <h3 class='varmFont'>${temprature[i]} </h3>
         </div>
-        `
+    `
     }
+
+
  }
 }
 

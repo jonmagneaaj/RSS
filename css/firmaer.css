@@ -1,0 +1,28 @@
+#firmasection{
+  flex: 6;
+  display: flex;
+  align-items: flex-start;
+
+  padding: 28px;
+  gap: 28px;
+  height: 100%;
+  /* Inside auto layout */
+  
+  align-self: stretch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+#list-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+#list-container .column{
+  width: auto;
+}
