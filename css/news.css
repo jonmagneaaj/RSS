@@ -82,12 +82,16 @@
         flex-direction: column; /* Change flex direction for screens less than x wide */
         gap:0 !important;
       }
+      #image-output { 
+        flex: 2;
+      }
   
       #my-image {
           border-radius: 20px 20px 0px 0px !important;
       }
   
       #output {
+        
           padding: 16px !important;
       }
     }
