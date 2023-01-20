@@ -1,4 +1,4 @@
-fetch('/resources/firmaliste.json')
+fetch('firmaliste.json')
   .then(response => {
     if(!response.ok) {
       throw new Error('Failed to fetch data');
