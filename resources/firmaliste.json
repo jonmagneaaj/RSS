@@ -4,60 +4,18 @@
         "floor": "3"
     },
     {
-        "company": "SpareBank 1 Eiendom",
-        "floor": "5"
-    },
-    {
-        "company": "SpareBank 1 Samspar",
-        "floor": "4"
-    },
-    {
-        "company": "SpareBank 1 Utvikling",
-        "floor": "5"
-    },
-    {
-        "company": "SpareBank 1 Pensjon",
-        "floor": "5"
-    },
-    {
-        "company": "McDonalds",
-        "floor": "2"
-    },
-    {
         "company": "Kantine",
         "floor": "1"
     },
     {
-        "company": "12 møterom",
-        "floor": "1"
+        "company": "SpareBank 1 forvaltning",
+        "floor": "5"
     },
     {
-        "company": "Shuffleboardrom",
-        "floor": "1"
-    },
-    {
-        "company": "TV-stue",
-        "floor": "1"
-    },
-    {
-        "company": "Ruter AS",
-        "floor": "3"
-    },
-    {
-        "company": "GroupM",
-        "floor": "3"
-    },
-    {
-        "company": "Equinor ASA",
-        "floor": "2"
-    },
-    {
-        "company": "Soprasteria",
-        "floor": "2"
-    },
-    {
-        "company": "Bravida",
-        "floor": "6"
+        "company": "SpareBank 1 Samspar",
+        "floor": "5"
     }
+
+
 
 ]

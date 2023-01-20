@@ -14,7 +14,7 @@ fetch('/resources/firmaliste.json')
     for (let i = 0; i < 6; i++) {
         let column = document.createElement("div");
         column.classList.add("column");
-        let header = document.createElement("h3");
+        let header = document.createElement("h5");
         header.textContent = `${i+1}.etg`;
         column.appendChild(header);
         listContainer.appendChild(column);
@@ -28,7 +28,7 @@ fetch('/resources/firmaliste.json')
         let floor = firmaliste[i].floor;
 
         // Create a new list item
-        let newItem = document.createElement("li");
+        let newItem = document.createElement("h4");
         newItem.textContent = company;
 
         // Append the new item to the appropriate column

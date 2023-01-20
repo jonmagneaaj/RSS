@@ -7,12 +7,10 @@
   flex-wrap: wrap;
   padding: 0px;
   
-  max-height: 200px ;
+  max-height: 150px ;
   overflow: hidden;
-
-  width: 100%;
   max-width: 100%;
-  
+  padding: 28px;
   }
   
   .fade-in {
@@ -24,27 +22,12 @@
       transition: opacity .5s ease-out;
   }
 
-  @media (min-width: 1800px) {
-
-    #logo-img img { 
-      width: 128px; /* or any desired width */
-    }
-    
-   }
-
   
   @media (max-width: 817px) {
       #news {
         flex-direction: column; /* Change flex direction for screens less than x wide */
         gap:0 !important;
-      }
-  
-      #my-image {
-          border-radius: 20px 20px 0px 0px !important;
-      }
-  
-      #output {
-          padding: 16px !important;
+        padding: 18px;
       }
     }
   

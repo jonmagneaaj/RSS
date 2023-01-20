@@ -25,8 +25,8 @@ function updateOutput() {
   const item = items[i];
   const title = item.querySelector('title').textContent;
   const description = item.querySelector('description').textContent;
-  const h2 = document.createElement('h5');
-  const p = document.createElement('h6');
+  const h2 = document.createElement('h4');
+  const p = document.createElement('h5');
   h2.textContent = title;
   p.textContent = description;
   
