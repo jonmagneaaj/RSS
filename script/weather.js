@@ -5,7 +5,7 @@ const url = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&lang=
 const getWeather = async (lat, lon) =>{
 
     //const api = `${url}&lat=${lat}&lon=${lon}`;
-    const api = `${url}&lat=59.911491&lon=10.757933.`;
+    const api = `${url}&lat=59.911491&lon=10.757933`;
    
 
     const response = await fetch(api);
@@ -102,7 +102,7 @@ const getWeather = async (lat, lon) =>{
  }
 }
 
-// Refresher været hvert 30 min
+// Refresher været hvert 5 min
 setInterval(getWeather, 5 * 60 * 1000);
 
 // Lager posisjonen
