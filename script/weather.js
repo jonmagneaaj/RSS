@@ -5,7 +5,7 @@ const url = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&lang=
 const getWeather = async (lat, lon) =>{
 
     //const api = `${url}&lat=${lat}&lon=${lon}`;
-    const api = `${url}&lat=59.911491&lon=10.757933`;
+    const api = `${url}&lat=58.969975&lon=5.733107`;
    
 
     const response = await fetch(api);
