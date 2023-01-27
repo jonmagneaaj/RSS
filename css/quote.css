@@ -5,9 +5,11 @@
     max-width: 100%;
     flex: 1;
     padding: 18px;
+    
 }
 
 #quote {
+  padding-top: 45px;
     text-align: left;
     flex-wrap: wrap;
     font-style: italic;
@@ -16,9 +18,9 @@
   }
 
   #author {
+    padding: 0px 0px;
     text-align: left;
     flex-wrap: wrap;
     justify-content: flex-start;
-
     font-size: 24px;
   }

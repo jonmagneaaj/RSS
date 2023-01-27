@@ -65,7 +65,6 @@ function updateOutput() {
     
     
 }
-updateOutput(); // call the function immediately
 setInterval(updateOutput, 3*9000);
 
     

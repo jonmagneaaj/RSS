@@ -18,7 +18,7 @@ function updateOutput() {
     return;
   }
   isTransitioning = true;
-  if (i >= 5) {               // 9 pleide å være items.length
+  if (i >= 1) {               // 9 pleide å være items.length
     i = 0;
   }
 
@@ -30,9 +30,18 @@ function updateOutput() {
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 200) {
-    p.textContent = p.textContent.substring(0, 200) + " (...)";
-  }
+  if (p.textContent.length > 300) {
+    var sentences = p.textContent.split('. ');
+    var truncatedText = sentences.slice(0, 2).join('. ');
+    if (truncatedText.slice(-1) !== ".") {
+        truncatedText += ".";
+    }
+    p.textContent = truncatedText;
+}
+
+
+
+
 
   
   outputContainer.classList.add('fade-out');
@@ -56,7 +65,9 @@ function updateOutput() {
     
     
 }
-setInterval(updateOutput, 3*60000);
+
+updateOutput(); // call the function immediately
+setInterval(updateOutput, 300000);
 
     
 
