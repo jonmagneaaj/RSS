@@ -28,10 +28,6 @@
         "author": "-Charles Darwin"
     },
     {
-        "quote": "If you have an apple and I have an apple and we exchange these apples then you and I will still each have one apple. But if you have an idea and I have an idea and we exchange these ideas, then each of us will have two ideas.",
-        "author": "-George Bernard Shaw"
-    },
-    {
         "quote": "All that is necessary for the triumph of evil is that good men do nothing.",
         "author": "-Edmund Burke"
     },
@@ -202,7 +198,7 @@
     "quote": "The world's largest pig weighed over 907 kg."
     },
     {
-    "quote": "The world's largest living organism is a fungus, Armillaria ostoyae, covering over 893 ha in Oregon, USA."
+    "quote": "The world's largest living organism is a fungus, Armillaria ostoyae, covering over 893 hectar in Oregon, USA."
     },
     {
     "quote": "The world's oldest piece of chewing gum is over 9,000 years old."
@@ -349,12 +345,6 @@
                 "quote": "In 2018, Amazon became the second company to reach a market value of over $1 trillion after Apple."
                 },
                 {
-                "quote": "Alibaba Group Holding Limited, a Chinese multinational conglomerate, was founded in 1999 by Jack Ma."
-                },
-                {
-                "quote": "Warren Buffett, CEO of Berkshire Hathaway, is one of the richest people in the world and is known for his value investing strategy."
-                },
-                {
                 "quote": "The biggest mergers and acquisitions (M&A) in history include the merger of Exxon and Mobil in 1999 and the acquisition of Time Warner by AOL in 2000."
                 },
                 {
@@ -364,26 +354,7 @@
                 "quote": "The London Stock Exchange (LSE) is the largest stock exchange in Europe by market capitalization."
                 },
                 {
-                "quote": "In 2008, the collapse of investment bank Lehman Brothers played a major role in the financial crisis and global recession."
-                },
-                {
-                "quote": "The Bank for International Settlements (BIS) is an international organization which serves central banks and promotes cooperation in the global financial system."
-                },
-                {
-                "quote": "The International Monetary Fund (IMF) is an organization of 189 countries working to promote international monetary cooperation and facilitate economic growth and development."
-                },
-                {
-                "quote": "The World Bank is a group of five international organizations that provides financial and technical assistance to developing countries for the purpose of pursuing capital investment."
-                },
-                {
                 "quote": "The Black Monday stock market crash occurred on October 19, 1987, and was the largest single-day percentage decline in stock market history."
-                },
-                {
-                "quote": "The Dot-com bubble was a period of excessive speculation in internet-related companies from 1997 to 2001, resulting in the collapse of many companies and a loss of investor wealth."
-                },
-                {
-                "quote": "The subprime mortgage crisis of 2007-2008 was a financial crisis that was triggered by the collapse of the US housing market and the resultant decline in values of securities tied to US real estate."
                 }
-
 
   ]

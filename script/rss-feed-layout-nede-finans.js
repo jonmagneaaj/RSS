@@ -1,5 +1,4 @@
-const feedURL = 'https://www.nrk.no/toppsaker.rss';
-const backupImageURL = './resources/nrk_bakgrunn.jpeg';
+const feedURL = 'https://www.nrk.no/nyheter/siste.rss';
 
 fetch(feedURL)
   .then((response) => response.text())
@@ -9,8 +8,6 @@ fetch(feedURL)
     const items = xml.querySelectorAll('item');
 
     const outputContainer = document.getElementById('output');
-    const imageElement = document.getElementById('my-image');
-    imageElement.src = backupImageURL;
 
     let i = 0;
     
@@ -21,33 +18,36 @@ function updateOutput() {
     return;
   }
   isTransitioning = true;
-  if (i >= 9) {               // 9 pleide å være items.length
+  if (i >= 1) {               // 9 pleide å være items.length
     i = 0;
   }
 
   const item = items[i];
   const title = item.querySelector('title').textContent;
   const description = item.querySelector('description').textContent;
-  const h2 = document.createElement('h2');
-  const p = document.createElement('p');
+  const h2 = document.createElement('h4');
+  const p = document.createElement('h5');
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 330) {
-    p.textContent = p.textContent.substring(0, 330) + " (...)";
-  }
+  if (p.textContent.length > 300) {
+    var sentences = p.textContent.split('. ');
+    var truncatedText = sentences.slice(0, 2).join('. ');
+    if (truncatedText.slice(-1) !== ".") {
+        truncatedText += ".";
+    }
+    p.textContent = truncatedText;
+}
 
-  const imageElements = item.getElementsByTagName('media:content');
-  let firstImageURL = backupImageURL;
-  if (imageElements.length > 0) {
-    firstImageURL = imageElements[0].getAttribute('url');
-  }
-  imageElement.classList.add('fade-out');
+
+
+
+
+  
   outputContainer.classList.add('fade-out');
   
     setTimeout(() => {
-      imageElement.src = firstImageURL;
-      imageElement.classList.remove('fade-out');
+
       outputContainer.innerHTML = '';
       outputContainer.appendChild(h2);
       outputContainer.appendChild(p);
@@ -65,7 +65,9 @@ function updateOutput() {
     
     
 }
-setInterval(updateOutput, 3*9000);
+
+updateOutput(); // call the function immediately
+setInterval(updateOutput, 300000);
 
     
 
