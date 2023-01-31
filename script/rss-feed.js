@@ -79,7 +79,7 @@ function updateOutput() {
     
 }
 updateOutput(); // call the function immediately
-setInterval(updateOutput, 9000);
+setInterval(updateOutput, 3*9000);
 
     
 
