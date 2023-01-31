@@ -30,7 +30,7 @@ function updateOutput() {
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 300) {
+  if (p.textContent.length > 275) {
     var sentences = p.textContent.split('. ');
     var truncatedText = sentences.slice(0, 2).join('. ');
     if (truncatedText.slice(-1) !== ".") {

@@ -31,10 +31,23 @@ function updateOutput() {
   const h2 = document.createElement('h2');
   const p = document.createElement('p');
   h2.textContent = title;
-  p.textContent = description;
   
-  if (p.textContent.length > 330) {
-    p.textContent = p.textContent.substring(0, 330) + " (...)";
+  // new code to get the closest full sentence
+  if (description.length > 360) {
+    let sentence = description.substring(0, 360);
+    let lastIndex = sentence.lastIndexOf(".");
+    if (lastIndex === -1) {
+      lastIndex = sentence.lastIndexOf("?");
+    }
+    if (lastIndex === -1) {
+      lastIndex = sentence.lastIndexOf("!");
+    }
+    if (lastIndex === -1) {
+      lastIndex = 359;
+    }
+    p.textContent = sentence.substring(0, lastIndex + 1);
+  } else {
+    p.textContent = description;
   }
 
   const imageElements = item.getElementsByTagName('media:content');
@@ -61,12 +74,12 @@ function updateOutput() {
         isTransitioning = false;
         i++;
       }, 500); // match the duration to 0.2s
-    }, 500); // match the duration to 0.2s
+    }, 500); // match the
     
     
 }
 updateOutput(); // call the function immediately
-setInterval(updateOutput, 3*9000);
+setInterval(updateOutput, 9000);
 
     
 

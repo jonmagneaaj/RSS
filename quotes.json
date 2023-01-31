@@ -8,10 +8,6 @@
         "author": "-Christopher Hitchens"
     },
     {
-        "quote": "To be or not to be, that is the question.",
-        "author": "-William Shakespeare"
-    },
-    {
         "quote": "I disapprove of what you say, but I will defend to the death your right to say it.",
         "author": "-Voltaire"
     },
@@ -22,10 +18,6 @@
     {
         "quote": "If you want to change the world, change yourself.",
         "author": "-Mahatma Gandhi"
-    },
-    {
-        "quote": "In the long history of humankind (and animal kind, too) those who learned to collaborate and improvise most effectively have prevailed.",
-        "author": "-Charles Darwin"
     },
     {
         "quote": "All that is necessary for the triumph of evil is that good men do nothing.",
@@ -44,20 +36,12 @@
         "author": "-Morrie Schwartz"
     },
     {
-        "quote": "The best way to predict your future is to create it.",
-        "author": "-Unknown"
-    },
-    {
         "quote": "Be the change that you wish to see in the world.",
         "author": "-Mahatma Gandhi"
     },
     {
         "quote": "The only way to do great work is to love what you do.",
         "author": "-Steve Jobs"
-    },
-    {
-        "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-        "author": "-Winston Churchill"
     },
     {
         "quote": "Life is what happens to you while you're busy making other plans.",
@@ -72,20 +56,12 @@
         "author": "-Socrates"
     },
     {
-        "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-        "author": "-Nelson Mandela"
-    },
-    {
         "quote": "In three words I can sum up everything I've learned about life: it goes on.",
         "author": "-Robert Frost"
     },
     {
         "quote": "In the end, it's not the years in your life that count. It's the life in your years.",
         "author": "-Abraham Lincoln"
-    },
-    {
-        "quote": "Happiness is not something ready-made. It comes from your own actions.",
-        "author": "-Dalai Lama"
     },
     {
         "quote": "Be yourself; everyone else is already taken.",
@@ -124,10 +100,6 @@
         "author": "-Aristotle"
     },
     {
-        "quote": "The only true wisdom is in knowing you know nothing.",
-        "author": "-Socrates"
-    },
-    {
         "quote": "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows.",
         "author": "-George Orwell"
     },
@@ -144,17 +116,14 @@
         "author": "-Friedrich Nietzsche"
     },
     { "quote": "Laughter is the closest distance between two people.", "author": "-Victor Borge" },
-{ "quote": "I am ready to meet my Maker. Whether my Maker is prepared for the great ordeal of meeting me is another matter.", "author": "-Winston Churchill" },
 { "quote": "I have not failed. I've just found 10,000 ways that won't work.", "author": "-Thomas Edison" },
 { "quote": "I have never let my schooling interfere with my education.", "author": "-Mark Twain" },
 { "quote": "I have always found that mercy bears richer fruits than strict justice.", "author": "-Abraham Lincoln" },
 { "quote": "I have never been hurt by what I have not said.", "author": "-Calvin Coolidge" },
 { "quote": "I have not yet begun to fight!", "author": "-John Paul Jones" },
-{ "quote": "I have always believed that a woman has the right to mount the scaffold. She must equally have the right to mount the rostrum.", "author": "-Susan B. Anthony" },
 { "quote": "I have no ambition in this world but one, and that is to be a fireman.", "author": "-Edward F. Croker" },
 { "quote": "I have no desire to experiment with politics.", "author": "-Albert Einstein" },
 { "quote": "I have never been lost, but I will admit to being confused for several weeks.", "author": "-Daniel Boone" },
-{ "quote": "I have never wished to cater to the crowd; for what I know they do not approve, and what they approve I do not know.", "author": "-Epicurus" },
 { "quote": "I have always found that the main obstacle to free expression is fear of ridicule.", "author": "-George Bernard Shaw" },
 { "quote": "I find that a duck’s opinion of me is very much influenced over whether or not I have bread.", "author": "-Mitch Hedberg" },
 { "quote": "The best way to predict the future is to invent it.", "author": "-John Von Neumann" },
@@ -232,9 +201,6 @@
         },
         {
         "quote": "The Statue of Liberty was a gift from the people of France to the United States."
-        },
-        {
-        "quote": "The average human body contains enough fat to make seven bars of soap."
         },
         {
         "quote": "The Earth is tilted at an angle of 23.5 degrees on its axis."
