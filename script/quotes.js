@@ -24,7 +24,7 @@ fetch("quotes.json")
     }
 
     updateQuote();
-    setInterval(updateQuote, 30*30000);
+    setInterval(updateQuote, 45000);
   })
   .catch(error => {
     console.error("An error occurred while fetching the JSON file:", error);
