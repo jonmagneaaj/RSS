@@ -7,12 +7,15 @@ fetch("quotes.json")
     let currentQuoteIndex = Math.floor(Math.random() * quotes.length);
 
     function updateQuote() {
+    
       let quote = document.createTextNode(quotes[currentQuoteIndex].quote);
       let i = document.createElement("i");
       i.appendChild(quote);
       document.getElementById("quote").innerHTML = "";
       document.getElementById("quote").appendChild(i);
-      document.getElementById("author").innerHTML = quotes[currentQuoteIndex].author;
+      document.getElementById("author").innerHTML = quotes[currentQuoteIndex].author ? quotes[currentQuoteIndex].author : "";
+      
+  
 
       currentQuoteIndex++;
       if (currentQuoteIndex >= quotes.length) {

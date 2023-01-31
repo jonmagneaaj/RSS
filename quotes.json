@@ -8,10 +8,6 @@
         "author": "-Christopher Hitchens"
     },
     {
-        "quote": "To be or not to be, that is the question.",
-        "author": "-William Shakespeare"
-    },
-    {
         "quote": "I disapprove of what you say, but I will defend to the death your right to say it.",
         "author": "-Voltaire"
     },
@@ -22,14 +18,6 @@
     {
         "quote": "If you want to change the world, change yourself.",
         "author": "-Mahatma Gandhi"
-    },
-    {
-        "quote": "In the long history of humankind (and animal kind, too) those who learned to collaborate and improvise most effectively have prevailed.",
-        "author": "-Charles Darwin"
-    },
-    {
-        "quote": "If you have an apple and I have an apple and we exchange these apples then you and I will still each have one apple. But if you have an idea and I have an idea and we exchange these ideas, then each of us will have two ideas.",
-        "author": "-George Bernard Shaw"
     },
     {
         "quote": "All that is necessary for the triumph of evil is that good men do nothing.",
@@ -48,20 +36,12 @@
         "author": "-Morrie Schwartz"
     },
     {
-        "quote": "The best way to predict your future is to create it.",
-        "author": "-Unknown"
-    },
-    {
         "quote": "Be the change that you wish to see in the world.",
         "author": "-Mahatma Gandhi"
     },
     {
         "quote": "The only way to do great work is to love what you do.",
         "author": "-Steve Jobs"
-    },
-    {
-        "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-        "author": "-Winston Churchill"
     },
     {
         "quote": "Life is what happens to you while you're busy making other plans.",
@@ -76,20 +56,12 @@
         "author": "-Socrates"
     },
     {
-        "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-        "author": "-Nelson Mandela"
-    },
-    {
         "quote": "In three words I can sum up everything I've learned about life: it goes on.",
         "author": "-Robert Frost"
     },
     {
         "quote": "In the end, it's not the years in your life that count. It's the life in your years.",
         "author": "-Abraham Lincoln"
-    },
-    {
-        "quote": "Happiness is not something ready-made. It comes from your own actions.",
-        "author": "-Dalai Lama"
     },
     {
         "quote": "Be yourself; everyone else is already taken.",
@@ -128,10 +100,6 @@
         "author": "-Aristotle"
     },
     {
-        "quote": "The only true wisdom is in knowing you know nothing.",
-        "author": "-Socrates"
-    },
-    {
         "quote": "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows.",
         "author": "-George Orwell"
     },
@@ -148,24 +116,211 @@
         "author": "-Friedrich Nietzsche"
     },
     { "quote": "Laughter is the closest distance between two people.", "author": "-Victor Borge" },
-{ "quote": "I am ready to meet my Maker. Whether my Maker is prepared for the great ordeal of meeting me is another matter.", "author": "-Winston Churchill" },
 { "quote": "I have not failed. I've just found 10,000 ways that won't work.", "author": "-Thomas Edison" },
 { "quote": "I have never let my schooling interfere with my education.", "author": "-Mark Twain" },
 { "quote": "I have always found that mercy bears richer fruits than strict justice.", "author": "-Abraham Lincoln" },
 { "quote": "I have never been hurt by what I have not said.", "author": "-Calvin Coolidge" },
 { "quote": "I have not yet begun to fight!", "author": "-John Paul Jones" },
-{ "quote": "I have always believed that a woman has the right to mount the scaffold. She must equally have the right to mount the rostrum.", "author": "-Susan B. Anthony" },
 { "quote": "I have no ambition in this world but one, and that is to be a fireman.", "author": "-Edward F. Croker" },
 { "quote": "I have no desire to experiment with politics.", "author": "-Albert Einstein" },
 { "quote": "I have never been lost, but I will admit to being confused for several weeks.", "author": "-Daniel Boone" },
-{ "quote": "I have never wished to cater to the crowd; for what I know they do not approve, and what they approve I do not know.", "author": "-Epicurus" },
 { "quote": "I have always found that the main obstacle to free expression is fear of ridicule.", "author": "-George Bernard Shaw" },
-{ "quote": "I have never been a quitter. To leave office before my term is completed is opposed to every instinct in my body.", "author": "-Andrew Johnson" },
-{ "quote": "I have never killed a man, but I have read many obituaries with great pleasure.", "author": "-Clarence Darrow" },
-{ "quote": "I have a rendezvous with Death At some disputed barricade, When Spring comes back with rustling shade And apple-blossoms fill the air.", "author": "-Alan Seeger" },
-{ "quote": "I have never been hurt by what I have not said.", "author": "-Calvin Coolidge" },
-{ "quote": "I have no ambition in this world but one, and that is to be a fireman.", "author": "-Edward F. Croker" },
-{ "quote": "I have always found that the main obstacle to free expression is fear of ridicule.", "author": "-George Bernard Shaw" },
-{ "quote": "The best way to predict the future is to invent it.", "author": "-John Von Neumann" }
+{ "quote": "I find that a duck’s opinion of me is very much influenced over whether or not I have bread.", "author": "-Mitch Hedberg" },
+{ "quote": "The best way to predict the future is to invent it.", "author": "-John Von Neumann" },
+{
+    "quote": "A sneeze travels at over 160 km/h."
+    },
+    {
+    "quote": "The Great Wall of China is not visible from space with the naked eye."
+    },
+    {
+    "quote": "The shortest war in recorded history was between Britain and Zanzibar on 27 August 1896 lasting between 38 and 45 minutes."
+    },
+    {
+    "quote": "The heart of a blue whale is so large that a human can swim through its arteries."
+    },
+    {
+    "quote": "The Mona Lisa has no eyebrows because it was the fashion in Renaissance Florence to shave them."
+    },
+    {
+    "quote": "The longest recorded flight of a chicken is 13 seconds."
+    },
+    {
+    "quote": "The strongest muscle in the human body, proportionate to its size, is the tongue."
+    },
+    {
+    "quote": "A person will spend an average of 6 months in their lifetime waiting on a red light to turn green."
+    },
+    {
+    "quote": "The largest pyramid in the world is not in Egypt, but in Mexico."
+    },
+    {
+    "quote": "The world's largest snowflake was 38 cm wide and 20 cm thick."
+    },
+    {
+    "quote": "There are more possible iterations of a game of chess than there are atoms in the known universe."
+    },
+    {
+    "quote": "A group of flamingos is called a 'flamboyance.'"
+    },
+    {
+    "quote": "The world's largest pig weighed over 907 kg."
+    },
+    {
+    "quote": "The world's largest living organism is a fungus, Armillaria ostoyae, covering over 893 hectar in Oregon, USA."
+    },
+    {
+    "quote": "The world's oldest piece of chewing gum is over 9,000 years old."
+    },
+    {
+    "quote": "The world's largest snowman was 34.14 m tall and made of over 3,218 tonnes of snow."
+    },
+    {
+    "quote": "A bolt of lightning can reach temperatures of up to 30,000 kelvin (53,540°F)."
+    },
+    {
+    "quote": "A cat has a specialized collar bone that always lets it land on its feet."
+    },
+    {
+    "quote": "The world's largest amusement park, Worlds of Fun, is in Missouri, US and covers over 94 ha."
+    },
+    {
+    "quote": "The world's fastest ant is the Saharan silver ant, which can travel up to 1 meter per second."
+    },
+    {
+        "quote": "Bacteria in your gut are responsible for producing serotonin, which affects mood, appetite and sleep."
+        },
+        {
+        "quote": "The tallest mountain in the solar system is Olympus Mons on Mars, standing at a height of 22 km."
+        },
+        {
+        "quote": "The world's oldest surviving plant is a Great Basin bristlecone pine tree, estimated to be over 5,000 years old."
+        },
+        {
+        "quote": "The speed of light is constant, at 299,792,458 meters per second."
+        },
+        {
+        "quote": "The Statue of Liberty was a gift from the people of France to the United States."
+        },
+        {
+        "quote": "The Earth is tilted at an angle of 23.5 degrees on its axis."
+        },
+        {
+        "quote": "The first email was sent in 1971 by computer engineer Ray Tomlinson."
+        },
+        {
+        "quote": "The heart of a shrimp is located in its head."
+        },
+        {
+        "quote": "The human nose can detect over 1 trillion different scents."
+        },
+        {
+        "quote": "The human brain can process information at a speed of 120 meters per second."
+        },
+        {
+        "quote": "The world's largest flower, the Rafflesia arnoldii, can grow up to 100 cm in diameter and weigh up to 10 kg."
+        },
+        {
+        "quote": "The shortest river in the world is the Roe River in Montana, USA, measuring only 61 meters long."
+        },
+        {
+        "quote": "The largest desert in the world is the Antarctic Desert, covering an area of 14 million km²."
+        },
+        {
+        "quote": "The shortest war in history took place between Britain and Zanzibar on 27 August 1896 lasting between 38 and 45 minutes."
+        },
+        {
+            "quote": "A person's nose and ears never stop growing."
+            },
+            {
+            "quote": "The Great Barrier Reef is the largest living structure on Earth, visible from space."
+            },
+            {
+            "quote": "The word 'nerd' was first coined by Dr. Seuss in his book 'If I Ran the Zoo.'"
+            },
+            {
+            "quote": "The shortest war in recorded history lasted only 38 minutes."
+            },
+            {
+            "quote": "A day on Venus is longer than a year on Venus."
+            },
+            {
+            "quote": "The largest volcano in our solar system is Olympus Mons on Mars."
+            },
+            {
+            "quote": "Birds are the only animals with feathers."
+            },
+            {
+            "quote": "The world's largest island is Greenland."
+            },
+            {
+            "quote": "The smallest mammal in the world is the bumblebee bat."
+            },
+            {
+            "quote": "The world's largest ocean is the Pacific Ocean."
+            },
+            {
+            "quote": "A sneeze travels at over 160 km/h."
+            },
+            {
+            "quote": "The human brain contains more connections than there are stars in the Milky Way galaxy."
+            },
+            {
+            "quote": "The Great Wall of China is not visible from space with the naked eye."
+            },
+            {
+            "quote": "Elephants are the only animals that can't jump."
+            },
+            {
+            "quote": "The world's largest snowflake was 38 cm wide and 20 cm thick."
+            },
+            {
+            "quote": "The first video game, 'Tennis for Two,' was played on an oscilloscope in 1958."
+            },
+            {
+            "quote": "The world's tallest building is the Burj Khalifa in Dubai, standing at 828 meters tall."
+            },
+            {
+            "quote": "A person blinks an average of 10 times per minute."
+            },
+            {
+            "quote": "The largest flower in the world is the Rafflesia arnoldii, which can grow up to one meter in diameter."
+            },
+            {
+            "quote": "The fastest ant in the world is the Saharan silver ant, which can travel up to 1 meter per second."
+            },
+            {
+                "quote": "The world's first stock market was the Amsterdam Stock Exchange in the Netherlands, established in 1720."
+                },
+                {
+                "quote": "The New York Stock Exchange (NYSE) was established on May 17, 1792, under a buttonwood tree on Wall Street in New York City."
+                },
+                {
+                "quote": "The first initial public offering (IPO) was by the Dutch East India Company in 1602."
+                },
+                {
+                "quote": "Gold has been used as a form of currency for over 5,000 years."
+                },
+                {
+                "quote": "The US dollar is the world's most traded currency."
+                },
+                {
+                "quote": "The Great Depression was the longest and worst economic downturn in the history of the industrialized world."
+                },
+                {
+                "quote": "In 2018, Amazon became the second company to reach a market value of over $1 trillion after Apple."
+                },
+                {
+                "quote": "The biggest mergers and acquisitions (M&A) in history include the merger of Exxon and Mobil in 1999 and the acquisition of Time Warner by AOL in 2000."
+                },
+                {
+                "quote": "The Chicago Mercantile Exchange (CME) is the world's largest futures and options exchange."
+                },
+                {
+                "quote": "The London Stock Exchange (LSE) is the largest stock exchange in Europe by market capitalization."
+                },
+                {
+                "quote": "The Black Monday stock market crash occurred on October 19, 1987, and was the largest single-day percentage decline in stock market history."
+                }
 
   ]

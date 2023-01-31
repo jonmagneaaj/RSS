@@ -7,7 +7,7 @@ fetch(feedURL)
     const xml = parser.parseFromString(data, 'text/xml');
     const items = xml.querySelectorAll('item');
 
-    const outputContainer = document.getElementById('output');
+    const outputContainer = document.getElementById('outputFinans');
 
     let i = 0;
     
@@ -30,7 +30,7 @@ function updateOutput() {
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 275) {
+  if (p.textContent.length > 300) {
     var sentences = p.textContent.split('. ');
     var truncatedText = sentences.slice(0, 2).join('. ');
     if (truncatedText.slice(-1) !== ".") {

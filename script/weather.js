@@ -100,7 +100,7 @@ const getWeather = async (lat, lon) =>{
 
 
  }
-}
+}  
 
 // Refresher været hvert 5 min
 setInterval(getWeather, 5 * 60 * 1000);

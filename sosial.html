@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="./css/weather.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/quote.css">
+    <link rel="stylesheet" href="./css/resepsjon.css">
     <title>Sosial</title>
 </head>
 <body>
 
     <div class="background-overlay"></div>
 
- 
+
 
     <!-- Boks som holder det samlet -->
     <section id="container">
@@ -48,6 +49,9 @@
                     <div class="loading-icon"></div>
                 </div>
             </div>
+
+
+
             <!-- oversikt over alle nyheter-->
             <section id="news-container">
                 <!-- oversikt over nyheter -->
@@ -61,17 +65,23 @@
                             <img src="./resources/NRK_positiv_rgb.png" alt="NRK logo">
                         </div>
                     </section>
+
+
                     <!-- tekst output-->
                     <section id="output" class="">
                     </section>
                 </div>
+
+
                 <section id="quotesection" class="glass">
-                    <h3>Quote of the day</h3>
+                
                     <div id="quote"></div>
                     <div id="author"></div>
-                </section>   
+                </section>
+                
+
             </section>
-        </section>
+        
     </section>
 
 
@@ -85,6 +95,8 @@
     <script src='./script/time.js'></script>
     <!-- Quotes -->
     <script src='./script/quotes.js'></script>
+
+    <script src='./script/rss-feed-layout-nede-finans.js'></script>
 
 
 </body>
