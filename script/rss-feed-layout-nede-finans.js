@@ -1,6 +1,6 @@
-const feedURL = 'https://https://www.nrk.no/osloogviken/siste.rss';
+const feedURLfinans = 'https://ws.finansavisen.no/api/articles.rss?category=B%C3%B8rs';
 
-fetch(feedURL)
+fetch(feedURLfinans)
   .then((response) => response.text())
   .then((data) => {
     const parser = new DOMParser();
@@ -39,10 +39,6 @@ function updateOutput() {
     p.textContent = truncatedText;
 }
 
-console.log('Output:');
-console.log(`Title: ${title}`);
-console.log(`Description: ${description}`);
-console.log("hello");
   
   outputContainer.classList.add('fade-out');
   
@@ -53,7 +49,7 @@ console.log("hello");
       outputContainer.appendChild(p);
       outputContainer.classList.remove('fade-out');
       setTimeout(() => {
-        imageElement.classList.add('fade-in');
+       
         outputContainer.classList.add('fade-in');
       }, 200); // match the duration to 0.2s
       

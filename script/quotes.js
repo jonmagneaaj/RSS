@@ -23,6 +23,8 @@ fetch("quotes.json")
       }
     }
 
+    console.log("hehe");
+
     updateQuote();
     setInterval(updateQuote, 5*9000);
   })

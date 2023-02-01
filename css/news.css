@@ -51,6 +51,20 @@
   #logo-img img { 
     width: 94px; /* or any desired width */
   }
+
+  #logo-img2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    padding: 6px 8px 4px 8px;
+    border-radius: 0px 8px 8px 0px;
+
+  }
+
+  #logo-img2 img { 
+    width: 54px; /* or any desired width */
+  }
   
   #output{
     flex: 6;
