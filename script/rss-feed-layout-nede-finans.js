@@ -1,4 +1,4 @@
-const feedURL = 'https://www.nrk.no/nyheter/siste.rss';
+const feedURL = 'https://https://www.nrk.no/osloogviken/siste.rss';
 
 fetch(feedURL)
   .then((response) => response.text())
@@ -18,7 +18,7 @@ function updateOutput() {
     return;
   }
   isTransitioning = true;
-  if (i >= 1) {               // 9 pleide å være items.length
+  if (i >= 10) {               // 9 pleide å være items.length
     i = 0;
   }
 
@@ -39,10 +39,10 @@ function updateOutput() {
     p.textContent = truncatedText;
 }
 
-
-
-
-
+console.log('Output:');
+console.log(`Title: ${title}`);
+console.log(`Description: ${description}`);
+console.log("hello");
   
   outputContainer.classList.add('fade-out');
   

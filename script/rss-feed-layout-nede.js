@@ -7,7 +7,7 @@ fetch(feedURL)
     const xml = parser.parseFromString(data, 'text/xml');
     const items = xml.querySelectorAll('item');
 
-    const outputContainer = document.getElementById('output');
+    const outputContainer = document.getElementById('outputNede');
 
     let i = 0;
     

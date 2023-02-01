@@ -107,11 +107,16 @@ setInterval(getWeather, 5 * 60 * 1000);
 
 // Lager posisjonen
 const visPosisjon = (pos) =>{
-    const lat = pos.coords.latitude;
-    const lon = pos.coords.longitude;
+
+   // const lat = pos.coords.latitude;  
+   // const lon = pos.coords.longitude;     Hardkodet inn posisjonen under, men tror ikke det utgjorde noen forskjell (er hardkodet initielt (oppe) også)
+
+    const lat = 59.911491;
+    const lon = 10.757933;
+   
 
     getWeather(lat, lon);
 }
 
 // Henter din lokasjon
-navigator.geolocation.getCurrentPosition(visPosisjon);
+ navigator.geolocation.getCurrentPosition(visPosisjon);

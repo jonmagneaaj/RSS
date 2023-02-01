@@ -25,4 +25,5 @@ function updateDate() {
     document.getElementById("Ddate").innerHTML = "<h3>" + dayOfMonth + " " + monthName + "</h3>";
   }
   
+  updateDate(); // initiate the time update in the very first iteration
   setInterval(updateDate, 60000); // update the date every minute (60000 milliseconds)

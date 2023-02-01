@@ -4,100 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Css filer -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/sosial.css">
     <link rel="stylesheet" href="./css/weather.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/quote.css">
     <link rel="stylesheet" href="./css/resepsjon.css">
+    <link rel="stylesheet" href="./css/Shortnews.css">
+ 
+
     <title>Sosial</title>
 </head>
 <body>
-
     <div class="background-overlay"></div>
-
-
-
-    <!-- Boks som holder det samlet -->
     <section id="container">
-        <!-- Boks til nyheter og vær-->
         <section id="weatherNews-container">
-            <!-- oversikt over tid og vær -->
             <div id="weather" class="glass">
-                <!-- Dagens tid og dato-->
                 <div id="date">
-                    <div id="Dhour" class="dates">
-                        <h1>10:45</h1>
+                    <div id="Dhour" class="dates"> 
                     </div>
                     <div id="Dday" class="dates">
-                        <h2>mandag</h2>
                     </div>
                     <div id="Ddate" class="dates">
-                        <h3>23 desember</h3>
                     </div>
                 </div>
-    
-                <!-- Været nå -->
                 <div id="forcast">
                     <div class="loading-icon"></div>
                 </div>
-    
-                <!-- Været om 6 og 12 timer-->
                 <div id="days">
                     <div class="loading-icon"></div>
                     <div class="loading-icon"></div>
                 </div>
             </div>
 
+   
 
-
-            <!-- oversikt over alle nyheter-->
             <section id="news-container">
-                <!-- oversikt over nyheter -->
-                <div id="news" class=" glass">
-                    
-                    <!--Bilde output-->
+                <div id="news" class="glass">
                     <section id="image-output" class="">
                         <img id="my-image" class="">
-                        <!--NRK logo-->
                         <div id="logo-img">
                             <img src="./resources/NRK_positiv_rgb.png" alt="NRK logo">
                         </div>
                     </section>
-
-
-                    <!-- tekst output-->
                     <section id="output" class="">
                     </section>
                 </div>
-
-
                 <section id="quotesection" class="glass">
-                
                     <div id="quote"></div>
                     <div id="author"></div>
                 </section>
-                
 
+            
+                 <!-- nyhet nede høyre -->
+                 <section id="quotesection2" class=" glass">
+                    <div id="outputFinans" class=" glass">
+                    </div>
+                    </section>
+                </div>
             </section>
         
+                   
+
     </section>
 
 
 
-    <!-- Javascript filer -->
-    <!-- Henter været-->
+
     <script src='./script/weather.js'></script>
-     <!-- Henter rss feed-->
     <script src='./script/rss-feed.js'></script>
-     <!-- Henter tiden-->
     <script src='./script/time.js'></script>
-    <!-- Quotes -->
     <script src='./script/quotes.js'></script>
-
     <script src='./script/rss-feed-layout-nede-finans.js'></script>
-
-
+   
 </body>
 </html>
