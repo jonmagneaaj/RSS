@@ -30,15 +30,16 @@ function updateOutput() {
   h2.textContent = title;
   p.textContent = description;
   
-  if (p.textContent.length > 300) {
-    var sentences = p.textContent.split('. ');
-    var truncatedText = sentences.slice(0, 2).join('. ');
-    if (truncatedText.slice(-1) !== ".") {
-        truncatedText += ".";
+  if (description.length > 200) {
+    let sentences = description.split('. ');
+    let truncatedText = sentences.slice(0, 2).join('. ');
+    if (truncatedText.slice(-1) !== '.') {
+      truncatedText += '.';
     }
-    p.textContent = truncatedText;
-}
+    description = truncatedText;
+  }
 
+  p.textContent = description;
   
   outputContainer.classList.add('fade-out');
   
@@ -63,7 +64,7 @@ function updateOutput() {
 }
 
 updateOutput(); // call the function immediately
-setInterval(updateOutput, 30000);
+setInterval(updateOutput, 60000);
 
     
 

@@ -54,16 +54,16 @@
 
   #logo-img2 {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: rgb(12, 12, 12);
-    padding:0px 0px 0px 0px;
-    border-radius: 0px 0px 0px 0px;
+    top: -5px;
+    left: -9px;
+    padding: 6px 8px 4px 8px;
+    border-radius: 15px 8px 8px 8px;
 
   }
 
   #logo-img2 img { 
     width: 55px; /* or any desired width */
+    border-radius: 8px 0px 0px 0px;
   }
   
   #output{
