@@ -1,4 +1,4 @@
-const feedURLfinans = 'https://ws.finansavisen.no/api/articles.rss?category=B%C3%B8rs';
+const feedURLfinans = 'https://ws.finansavisen.no/api/articles.rss';
 
 fetch(feedURLfinans)
   .then((response) => response.text())
@@ -63,7 +63,7 @@ function updateOutput() {
 }
 
 updateOutput(); // call the function immediately
-setInterval(updateOutput, 300000);
+setInterval(updateOutput, 30000);
 
     
 

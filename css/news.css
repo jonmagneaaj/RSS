@@ -56,14 +56,14 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: white;
-    padding: 6px 8px 4px 8px;
-    border-radius: 0px 8px 8px 0px;
+    background-color: rgb(12, 12, 12);
+    padding:0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 
   }
 
   #logo-img2 img { 
-    width: 54px; /* or any desired width */
+    width: 55px; /* or any desired width */
   }
   
   #output{
@@ -80,6 +80,16 @@
     align-self: stretch;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  #outputFinans{
+
+    max-width: 100%;
+    padding-top: 4.3%;
+    padding-bottom: 2%;
+    text-align: left;
+    flex-wrap: wrap;
+    font-style: italic;
   }
 
   @media (min-width: 1800px) {
