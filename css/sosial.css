@@ -47,6 +47,14 @@ body{
     gap: 28px;
 }
 
+#containerNede{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    height: 23%;
+
+}
+
 
 
 @media (max-width: 1300px) {

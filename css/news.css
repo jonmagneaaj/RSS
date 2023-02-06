@@ -54,11 +54,10 @@
 
   #logo-img2 {
     position: absolute;
-    top: -5px;
-    left: -9px;
+    top: 76%;
+    left: 94%;
     padding: 6px 8px 4px 8px;
     border-radius: 15px 8px 8px 8px;
-
   }
 
   #logo-img2 img { 

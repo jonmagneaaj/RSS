@@ -1,41 +1,44 @@
 #quotesection{
-  display: flex;
-  flex-direction: column;
   gap: 8px;
-  max-width: 48%;
-  flex: 1;
+  flex: 3;
   padding: 18px;
   padding-left: 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  
+
   /* width: 850px;
   height: 255px;
   */
 }
 
 #quotesection2{
-  position: absolute;
-  top: 75%;
-  left: 60.5%;
-  width: 36%;
-  height: 17%;
-  padding: 18px;
+padding-left: 30px;
+padding: 18px;
+flex: 3;
+gap: 8px;
+display: flex;
+align-items: center;
+
 }
 
 
 #quote {
     
   max-width: 100%;
-    padding-top: 3%;
-    padding-bottom: 2%;
+ 
     text-align: left;
-    flex-wrap: wrap;
     font-style: italic;
     
   }
 
   #author { 
+
+
     padding: 0px 0px;
     text-align: left;
-    flex-wrap: wrap;
+   
   }
 
 
